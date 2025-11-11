@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+.bg-url {
+  background-image: url("/images/Hero-pic.jpg");
+}
+
+.dark-bg {
+  background-color: #1b2a31;
+}
+
+.reservation-section {
+  background-image: url("/images/Rectangle682.png");
+}
+
+.bg-view,
+.bg-explain-card,
+.bg-explore,
+.bg-footer {
+  background-color: #10181B;
+}
+
+
+.bg-install {
+  background-image: url("/images/Rectangle684.png");
+}
+
+.bg-newsLetter {
+  background-image: url("/images/Rectangle685.png");
+}
+
+
+@media (max-width : 1300px) {
+  .link-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 0;
+    gap: 0;
+  }
+}
+
+@media (max-width : 1160px) {
+  #food-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+  }
+
+  .link-sec {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    margin-top: 0;
+    gap: 0;
+  }
+}
+
+
+@media (max-width : 800px) {
+  #view-cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+  }
+
+  #food-cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    row-gap: 50px;
+  }
+
+  .link-sec {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+
+  #contact-list{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width : 650px) {
+  #contact-us {
+    display: none;
+  }
+
+  .footer {
+    box-sizing: unset;
+    display: grid;
+    height: 400px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    padding: 0;
+    justify-items: center;
+    row-gap: 50px;
+    padding: 30px 0;
+  }
+}
+
+@media (max-width : 400px) {
+  #view-cards {
+    width: 65%;
+  }
+
+  #food-cards-container {
+    justify-items: center;
+  }
+
+  #food-card {
+    width: 70%;
+  }
+}
